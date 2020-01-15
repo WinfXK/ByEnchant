@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    android:orientation="vertical"
+    tools:context="cn.epicfx.winfxk.byenchant.main.Main" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="end|center_vertical"
+        android:layout_weight="1"
+        android:background="#9955ff55" >
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:background="#00000000"
+            android:contentDescription="@string/add"
+            android:onClick="onAdd"
+            android:padding="7dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/add" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/imageButton1"
+            android:background="#00000000"
+            android:contentDescription="@string/save"
+            android:onClick="onSave"
+            android:padding="7dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/save" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/imageButton2"
+            android:background="#00000000"
+            android:contentDescription="@string/editadd"
+            android:onClick="onAddEdit"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/edit" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/imageButton3"
+            android:background="#00000000"
+            android:contentDescription="@string/remove"
+            android:onClick="onRemove"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/remove" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/imageButton4"
+            android:background="#00000000"
+            android:contentDescription="@string/all"
+            android:onClick="onAll"
+            android:scaleType="fitCenter"
+            android:src="@drawable/all" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom|start"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:background="#00000000" >
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:contentDescription="@string/by"
+            android:indeterminateDrawable="@drawable/load_dialog_icon"
+            android:onClick="onBy" />
+    </RelativeLayout>
+
+</LinearLayout>

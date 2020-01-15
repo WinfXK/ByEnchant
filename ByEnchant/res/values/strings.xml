@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ByEnchant</string>
+    <string name="save">保存输出</string>
+    <string name="add">添加项目</string>
+    <string name="bfb">附魔概率：1%</string>
+    <string name="zdybfb">自定义附魔概率：</string>
+    <string name="jsx">若本项不为空，这上方概率选择将无效！</string>
+    <string name="ok">确定</string>
+    <string name="qxzfmdj">附魔等级：1</string>
+    <string name="help">这是什么</string>
+    <string name="edit1">1</string>
+    <string name="remove">删除</string>
+    <string name="all">设置全部</string>
+    <string name="editadd">导入</string>
+    <string name="ed">请输入想要导入编辑的文本</string>
+    <string name="by">帅帅的冰月</string>
+    <string name="click">请点击这里</string>
+
+</resources>
